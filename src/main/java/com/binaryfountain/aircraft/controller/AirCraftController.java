@@ -55,6 +55,9 @@ public class AirCraftController {
         return new ResponseEntity<AirCraft>(HttpStatus.NO_CONTENT);
     }
  
+	/* for delete air crafts
+	
+	*/
     @RequestMapping(value = "/user/", method = RequestMethod.DELETE)
     public ResponseEntity<AirCraft> deleteAllAirCrafts() {
         System.out.println("Deleting All aircrafts");
