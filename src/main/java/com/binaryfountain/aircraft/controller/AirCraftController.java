@@ -41,6 +41,9 @@ public class AirCraftController {
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
  
+	/* for dequeue air craft
+	
+	*/
 
     @RequestMapping(value = "/spot/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<AirCraft> deQueue(@PathVariable("id") int id) {
