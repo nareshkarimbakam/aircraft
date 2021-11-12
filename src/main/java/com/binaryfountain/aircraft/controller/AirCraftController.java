@@ -31,7 +31,9 @@ public class AirCraftController {
         return new ResponseEntity<AirCraftParkingSpot>(spot, HttpStatus.OK);
     }
  
-
+	/* for enqueue air craft
+	
+	*/
     @RequestMapping(value = "/user/", method = RequestMethod.POST)
     public ResponseEntity<Void> enQueue(@RequestBody AirCraft ac) {
         System.out.println("Parking aircraft " + ac.getId());
